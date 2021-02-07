@@ -1,0 +1,185 @@
+<!--
+*
+*  INSPINIA - Responsive Admin Theme
+*  version 2.8
+*
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>INSPINIA | Dashboard</title>
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <!--<link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">-->
+
+    <!-- Gritter -->
+    <!--<link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">-->
+
+    <!--<link href="css/animate.css" rel="stylesheet">-->
+    <link href="css/basic/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper">
+    <!--导航-->
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+
+                <!--简介-->
+                <li class="nav-header" style="padding: 0px 0px">
+                    <div style="display: inline-block;">
+                        <img alt="image" class="rounded-circle" style="padding:10px;" src="img/cat.png"/>
+                    </div>
+                    <div style="display: inline-block;">
+                        <span style="font-size: 17px;color: whitesmoke">后台</span>
+                        <!--<p class="app-sidebar__user-designation">Frontend Developer</p>-->
+                    </div>
+                </li>
+
+                <!--菜单-->
+                <li class="active">
+                    <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">线索导入</span></a>
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
+
+
+    <!--页面内容-->
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+
+        <!--头部登录-->
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <!--菜单项目信息-->
+        <div class="row  border-bottom white-bg dashboard-header">
+
+            <div class="col-md-12">
+                <h2 id="menuDirectory">线索导入</h2>
+                <!--<small>You have 42 messages and 6 notifications.</small>-->
+
+            </div>
+            <!--<div class="col-md-6">-->
+
+        </div>
+
+        <!--页面主体内容-->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content">
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <div class="ibox ">
+                                <div class="ibox-title">
+                                    <h5>导入</h5>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link" href="">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                <div class="ibox-content inspinia-timeline">
+
+                                    <div class="feedback-wrap-box">
+
+                                        <div class="feedback-box">
+                                            <div class="formBox">
+                                                <form id="regForm" name="form" action="#">
+                                                    <div class="formBoxFormImg">
+                                                        <ul>
+                                                            <li id="updateBtn">
+                                                            <span class="imgUpdate">
+                                                                <img src="img/upload.png" alt="">
+                                                            </span>
+                                                                <!--   没有  multiple  就是单选-->
+                                                                <input type="file"  id="choose-file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+                                                            </li>
+                                                        </ul>
+                                                        <p id="fileName"></p>
+                                                    </div>
+
+                                                    <div class="formBoxFormBtn">
+                                                        <input type="button" value="提交" id="submitBtn">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--footer信息-->
+    <div class="footer">
+<!--        <div class="float-right">-->
+<!--            10GB of <strong>250GB</strong> Free.-->
+<!--        </div>-->
+        <div>
+            <strong>Copyright</strong> fancky &copy; 2020-2050
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/basic/jquery-3.1.1.min.js"></script>
+<script src="js/basic/popper.min.js"></script>
+<script src="js/basic/bootstrap.js"></script>
+
+<script src="js/basic/menu.js"></script>
+
+<script src="js/basic/jquery.metisMenu.js"></script>
+<script src="js/basic/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript 左侧导航 -->
+<script src="js/basic/inspinia.js"></script>
+<script src="js/basic/pace.min.js"></script>
+
+<script src="js/studentrecoord.js"></script>
+</body>
+</html>
