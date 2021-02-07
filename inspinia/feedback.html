@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!--<meta http-equiv="Access-Control-Allow-Origin" content="*">-->
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/jquery-2.1.0.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <title>上传</title>
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?8d11e1abd4994140460b5bcf4dda25ff";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito",
+            "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+        var browser = navigator.userAgent.toLowerCase();
+        var isMobile = false;
+        for (var i = 0; i < mobileAgent.length; i++) {
+            if (browser.indexOf(mobileAgent[i]) != -1) {
+                isMobile = true;
+                //alert(mobileAgent[i]);
+                location.href = 'http://m.newclasses.org';
+                break;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <div class="feedback-wrap-box">
+
+        <div class="feedback-box">
+            <div class="feedText">请在此处描述您的问题，为了更好的为您服务，请准确填写以下信息，我们会尽快联系您解决！</div>
+            <div class="formBox">
+                <form id="regForm" name="form" action="#">
+                    <div class="formBoxForm">
+
+                        <label for="">意见反馈（上限500字）：</label>
+                        <div>
+                            <textarea name="suggestion" id="textareaid" cols="55" rows="5" maxlength="500" placeholder="有什么建议或者意见都详细告诉我们吧～"></textarea>
+                            <div class="errorMessageTextarea">请输入反馈内容！</div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="formBoxFormImg">
+                        <label>上传图片（不超过6张）：</label>
+                        <ul class="file-list">
+                            <li id="updateBtn">
+                                <span class="imgUpdate">
+                                    <img src="images/update.png" alt="">
+                                </span>
+
+                                <input type="file" accept="image/*" id="choose-file" multiple>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="formBoxForm">
+                        <label for="">联系方式：</label>
+                        <div>
+                            <input id="phoneid" type="number" name="phone" maxlength="11" autocomplete="off" placeholder="请输入联系方式">
+                            <div class="errorMessageInput">请输入手机号！</div>
+                        </div>
+
+                    </div>
+                    <div class="formBoxFormBtn">
+                        <label for=""></label>
+                        <input type="button" value="提交" id="submitBtn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script src="js/header_footer.js"></script>
+    <script type="text/javascript">
+        (function () {
+            AOS.init({});
+        }());
+    </script>
+    <script>
+        var iSwiper = new Swiper('.banner .swiper-container', {
+            paginationClickable: true,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false,
+            calculateHeight: true,
+            loop: true,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+        });
+        $('.arrow-left').on('click', function (e) {
+            e.preventDefault();
+            iSwiper.swipePrev();
+        });
+        $('.arrow-right').on('click', function (e) {
+            e.preventDefault();
+            iSwiper.swipeNext();
+        });
+
+        var iSwiper2 = new Swiper('.wapbanner .swiper-container', {
+            paginationClickable: true,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false,
+            calculateHeight: true,
+            loop: true,
+            pagination: '.swiper-pagination2',
+            paginationClickable: true,
+        });
+        $('.arrow-left').on('click', function (e) {
+            e.preventDefault();
+            iSwiper2.swipePrev();
+        });
+        $('.arrow-right').on('click', function (e) {
+            e.preventDefault();
+            iSwiper2.swipeNext();
+        });
+
+
+        var iSwiper3 = new Swiper('.teacher_photo .swiper-container', {
+            paginationClickable: true,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false,
+            calculateHeight: true,
+            loop: true,
+            paginationClickable: true,
+        });
+        $('.arrow-left').on('click', function (e) {
+            e.preventDefault();
+            iSwiper3.swipePrev();
+        });
+        $('.arrow-right').on('click', function (e) {
+            e.preventDefault();
+            iSwiper3.swipeNext();
+        });
+
+        var iSwiper4 = new Swiper('.net_class .swiper-container', {
+            paginationClickable: true,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false,
+            calculateHeight: true,
+            loop: true,
+            paginationClickable: true,
+        });
+        $('.arrow-left').on('click', function (e) {
+            e.preventDefault();
+            iSwiper4.swipePrev();
+        });
+        $('.arrow-right').on('click', function (e) {
+            e.preventDefault();
+            iSwiper4.swipeNext();
+        });
+
+        $('.nav-list').hover(function () {
+            $(this).find('.arr2').css('display', 'block');
+            $(this).find('.arr1').css('display', 'none');
+            $(this).find('.li-show').stop().slideDown();
+        }, function () {
+            $(this).find('.arr2').css('display', 'none');
+            $(this).find('.arr1').css('display', 'block');
+            $(this).find('.li-show').stop().slideUp();
+        });
+        $('.tab-content .tabdl').each(function () {
+            var num = $(this).index();
+            var padd = 20;
+            var lef = 5;
+            var wid = $('.tab-content .tabdl').width();
+            $('.tab-content .tabdl').eq(num).css({
+                paddingTop: num * 10 + padd + "px",
+                left: lef + num * 180 + lef * num + "px"
+            })
+        });
+
+        var arr = [];
+        var arr1 = [];
+        var arr2 = [];
+        $('.wl-con').each(function () {
+            arr.push($(this).height());
+        });
+        $('.bj-con').each(function () {
+            arr1.push($(this).height());
+        });
+        $('.gd-con').each(function () {
+            arr2.push($(this).height());
+        });
+        var maxleng = Math.max.apply(null, arr);
+        var maxleng1 = Math.max.apply(null, arr1);
+        var maxleng2 = Math.max.apply(null, arr2);
+        $('.wl-con').height(maxleng);
+        $('.bj-con').height(maxleng1);
+        $('.gd-con').height(maxleng2);
+        var line = 10;
+        $('.wl').css({
+            paddingBottom: maxleng - line + "px"
+        });
+        $('.bj').css({
+            paddingBottom: maxleng1 - line + "px"
+        });
+        $('.gd').css({
+            paddingBottom: maxleng2 - line + "px"
+        });
+        $('.go-top').click(function () {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 500);
+        });
+        document.documentElement.addEventListener('touchstart', function (event) {
+            if (event.touches.length > 1) {
+                event.preventDefault();
+            }
+        }, false);
+        var lastTouchEnd = 0;
+        document.documentElement.addEventListener('touchend', function (event) {
+            var now = Date.now();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
+    </script>
+
+    <script>
+        $(function () {
+            $(".closebtn").click(function () {
+                $(".fiexd-nav").hide();
+            })
+        })
+    </script>
+    <script>
+        var $button = $('#submitBtn'),
+            //选择文件按钮
+            $file = $("#choose-file"),
+            //回显的列表
+            $list = $('.file-list'),
+            $updateBtn = $('#updateBtn'),
+            $textareaid = $('#textareaid'),
+            $phoneid = $('#phoneid'),
+
+            $errorMessageTextarea = $('.errorMessageTextarea'),
+            $errorMessageInput = $('.errorMessageInput'),
+
+
+            //选择要上传的所有文件
+            fileList = [],
+            sendList = [];
+        $textareaid.bind('input propertychange', 'textarea', function () {
+
+
+            if ($textareaid.val().length > 0) {
+                $errorMessageTextarea.css({ display: 'none' })
+            }
+        });
+        $phoneid.on('input propertychange', function () {
+            console.log('输入');
+            if ($phoneid.val().length > 0) {
+                $errorMessageInput.css({ display: 'none' })
+            }
+
+        })
+        //当前选择上传的文件
+        var curFile;
+        $file.on('change', function () {         //原生的文件对象，相当于$file.get(0).files[0];
+            curFile = this.files;         //将FileList对象变成数组
+            fileList = fileList.concat(Array.from(curFile));
+            for (var i = 0, len = curFile.length; i < len; i++) {
+                reviewFile(curFile[i])
+            }
+
+            if (fileList.length < 6) {
+                document.getElementById('updateBtn').style.display = 'block'
+            } else {
+                document.getElementById('updateBtn').style.display = 'none'
+            }
+
+        })
+        function reviewFile(file) {         //实例化fileReader,
+            let fd = new FileReader();         //获取当前选择文件的类型
+            let fileType = file.type;         //调它的readAsDataURL并把原生File对象传给它，
+            fd.readAsDataURL(file);//base64         //监听它的onload事件，load完读取的结果就在它的result属性里了
+            fd.onload = function () {
+                console.log('222', $list.children.length)
+                console.log('222', $list.children[0])
+                if (/^image\/[jpeg|png|jpg|gif]/.test(fileType)) {
+                    // $list.append('<li class="file-item"><img src="' + this.result + '" alt=""><span class="file-del"></span></li>')
+                    $updateBtn.before('<li class="file-item"><img src="' + this.result + '" alt=""><span class="file-del"><img src="images/remove" alt=""></span></li>')
+                } else {
+                    alert('请选择图片')
+                }
+            }
+        }
+        // 删除
+        $(".file-list").on('click', '.file-del', function () {
+            let $parent = $(this).parent();
+            let index = $parent.index();
+            fileList.splice(index, 1);
+            $parent.remove()
+            if (fileList.length < 6) {
+                document.getElementById('updateBtn').style.display = 'block'
+            } else {
+                document.getElementById('updateBtn').style.display = 'none'
+            }
+        });
+        function getFormData(form) {
+            // 传入的是表单对象 var obj_form = document.getElementById("form")
+            console.log('form', form)
+            if (!form) {
+                return {};
+            }
+            var params = {};
+            var elems = form.elements;
+            for (var i in elems) {
+                var elem = elems[i];
+                if (elem.nodeName != "INPUT" && elem.nodeName != "TEXTAREA") {
+                    continue;
+                }
+                var nodeAttrs = elem.attributes;
+
+                if (nodeAttrs.name) {
+                    params[nodeAttrs.name.nodeValue] = elem.value;
+                }
+            }
+            return params;
+        }
+        // 提交
+        $button.on('click', function () {
+            var regForm = document.getElementById("regForm")
+            var parmas = getFormData(regForm);
+
+            console.log('parmas', parmas)
+            console.log('fileList', fileList)
+            if (parmas.suggestion.length === 0 && parmas.phone.length === 0) {
+                $errorMessageTextarea.css({ display: 'block' })
+                $errorMessageInput.css({ display: 'block' })
+            } else if (parmas.suggestion.length === 0) {
+                $errorMessageTextarea.css({ display: 'block' })
+                return false
+            } else if (parmas.phone.length === 0) {
+                $errorMessageInput.css({ display: 'block' })
+                return false
+            } else if (fileList.length > 0) {
+                let formData = new FormData();
+                for (var i = 0, len = fileList.length; i < len; i++) {
+                    formData.append('file', fileList[i]);//将图片加入FormData
+                }
+                formData.append("suggestion", parmas.suggestion);
+                formData.append("phone", parmas.phone);
+
+                console.log('formData', formData.get("suggestion"))
+                $.ajax({
+                    //要将静态html发布到站点才能访问API
+                    //url: 'http://localhost:8010/Api/FeedBack/Add',
+                    url: 'http://localhost:9091/FileUpLoad/uploadFileAndForm',
+                    type: 'post',
+                    processData: false,
+                    contentType: false,//发送到服务器的数据类型
+                    //datatype:json  //服务器返回的数据类型
+                    data: formData,
+                    success: function (data, statusText, headers) {
+                        debugger;
+                        if (data.success) {
+                            alert("保存成功！")
+                        }
+                        else {
+                            alert("保存失败！")
+                        }
+                    }
+                })
+
+            } else {
+                alert("请选择文件！")
+            }
+            return false;
+
+        })
+    </script>
+
+</body>
+
+</html>
