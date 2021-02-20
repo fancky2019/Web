@@ -17,7 +17,7 @@ ul{
     padding-left:0px;
 }
 .teacher-wrap-box,.problem-wrap{
-    
+
     width: 100%;
     max-width: 1236px;
     margin: 0 auto;
@@ -31,7 +31,7 @@ ul{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
 .teacher-list-li{
     width: 29%;
@@ -82,20 +82,20 @@ ul{
 .formBoxForm label,.formBoxFormImg label,.formBoxFormBtn label{
     width:30%;
     text-align: right;
-   
+
 }
 .formBoxForm label::before {
     content: " * ";
     color: red;
   }
 .formBoxForm textarea{
-   border:1px solid #dddddd; 
+   border:1px solid #dddddd;
    resize:none;
    padding:5px;
-   
+
 }
 .formBox input{
-    border:1px solid #dddddd; 
+    border:1px solid #dddddd;
     height: 26px;
     padding:5px;
 
@@ -107,6 +107,22 @@ ul{
     border-radius: 2px;
     text-align: center;
     color:#ffffff;
+}
+
+#downLoadRepeat{
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;  //自定义边框
+    outline: none;    //消除默认点击蓝色边框效果
+
+    height: 26px;
+    padding:3px 15px;
+    background: #1890ff;
+    border-radius: 2px;
+    text-align: center;
+    color:#ffffff;
+
+
 }
 #updateBtn{
     width: 100px;
@@ -136,7 +152,7 @@ ul{
     display: inline-block;
     width: 100%;
     height: auto;
-    
+
 }
 .file-list{
     width:70%;
@@ -178,7 +194,7 @@ ul{
 .problem-box-top{
     width: 100%;
     height: auto;
-  
+
 }
 .problem-box-top img{
     width: 100%;
