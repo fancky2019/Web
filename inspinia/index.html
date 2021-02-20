@@ -125,17 +125,32 @@
                                                                 <img src="img/upload.png" alt="">
                                                             </span>
                                                                 <!--   没有  multiple  就是单选-->
-                                                                <input type="file"  id="choose-file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+                                                                <input type="file" id="choose-file"
+                                                                       accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
                                                             </li>
                                                         </ul>
                                                         <p id="fileName"></p>
                                                     </div>
 
-                                                    <div class="formBoxFormBtn">
-                                                        <input type="button" value="提交" id="submitBtn">
-                                                    </div>
+
+                                                        <div class="formBoxFormBtn"  style="display: inline-block">
+                                                            <input type="button" value="提交" id="submitBtn">
+                                                        </div>
+
+                                                        <div class="formBoxFormBtn"
+                                                             style="display: inline-block">
+                                                            <input type="button" value="下载重复数据" id="downLoadRepeat">
+                                                        </div>
+
                                                 </form>
+
                                             </div>
+
+
+                                            <!--                                            <div class="formBoxFormBtn" style="margin-left: 10px">-->
+                                            <!--                                                <input type="button" value="下载重复数据" id="downLoadRepeat">-->
+                                            <!--                                            </div>-->
+
                                         </div>
                                     </div>
                                 </div>
@@ -155,9 +170,9 @@
 
     <!--footer信息-->
     <div class="footer">
-<!--        <div class="float-right">-->
-<!--            10GB of <strong>250GB</strong> Free.-->
-<!--        </div>-->
+        <!--        <div class="float-right">-->
+        <!--            10GB of <strong>250GB</strong> Free.-->
+        <!--        </div>-->
         <div>
             <strong>Copyright</strong> fancky &copy; 2020-2050
         </div>
